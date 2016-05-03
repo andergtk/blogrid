@@ -1,0 +1,20 @@
+{
+  "name": "blogrid",
+  "version": "0.0.1",
+  "description": "Grid CSS responsivo para sites com sidebar",
+  "homepage": "https://github.com/andergtk/blogrid",
+  "main": "blogrid.css",
+  "authors": [
+    "Anderson Camargo <andergtk@gmail.com>"
+  ],
+  "ignore": [
+    "LICENSE",
+    "README.md",
+    "demo.html"
+  ],
+  "keywords": [
+    "css",
+    "grid"
+  ],
+  "license": "MIT"
+}

@@ -1,0 +1,126 @@
+/*!
+ * Blogrid
+ * Responsive CSS grid for sites with sidebar.
+ * https://github.com/andergtk/blogrid
+ */
+
+/*
+ * Grid (row)
+ */
+.grid,
+.grid .col { box-sizing: border-box }
+
+.grid {
+	display: block;
+	padding-right: 10px;
+	padding-left: 10px;
+	*zoom: 1;
+}
+
+/* clearfix */
+.grid:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+/*
+ * Columns
+ */
+.grid .col {
+	float: left;
+	padding: 0 10px 20px;
+	vertical-align: top;
+}
+
+/* correct spacing of nested columns */
+.grid .grid {
+	padding-right: 0;
+	padding-left: 0;
+	width: 100%;
+}
+
+.grid .grid:last-child .col { padding-bottom: 0; }
+.grid .grid .col:first-child { padding-left: 0; }
+.grid .grid .col:last-child { padding-right: 0; }
+
+
+/* for sites with sidebar */
+.grid .content {
+	display: inline-block;
+	float: none;
+	width: calc( 100% - 300px );
+}
+
+.grid .content-two-sidebars {
+	display: inline-block;
+	float: none;
+	width: calc( 100% - 600px );
+}
+
+.grid .sidebar {
+	float: right;
+	width: 300px;
+}
+
+.grid .sidebar-left {
+	float: left;
+	width: 300px;
+}
+
+
+.grid .whole,
+.grid .full-width { width: 100%; }
+.grid .half { width: 50%; }
+.grid .one-third { width: 33.3332%; }
+.grid .two-thirds { width: 66.6665%; }
+.grid .one-quarter,
+.grid .one-fourth { width: 25%; }
+.grid .three-quarters,
+.grid .three-fourths { width: 75%; }
+.grid .one-fifth { width: 20%; }
+.grid .two-fifths { width: 40%; }
+.grid .three-fifths { width: 60%; }
+.grid .four-fifths { width: 80%; }
+.grid .one-sixth { width: 16.6667%; }
+.grid .five-sixths { width: 83.3335%; }
+
+
+/*
+ * Push columns
+ */
+.grid .push-to-right { float: right; }
+.grid .push-half { margin-left: 50%; }
+.grid .push-one-third { margin-left: 33.3332%; }
+.grid .push-two-thirds { margin-left: 66.6665%; }
+.grid .push-one-quarter,
+.grid .push-one-fourth { margin-left: 25%; }
+.grid .push-three-quarters,
+.grid .push-three-fourths { margin-left: 75%; }
+.grid .push-one-fifth { margin-left: 20%; }
+.grid .push-two-fifths { margin-left: 40%; }
+.grid .push-three-fifths { margin-left: 60%; }
+.grid .push-four-fifths { margin-left: 80%; }
+.grid .push-one-sixth { margin-left: 16.6667%; }
+.grid .push-five-sixths { margin-left: 83.3335%; }
+
+
+/*
+ * Gutters
+ */
+.no-gutters.grid {
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+.no-gutters .col,
+.no-gutters.col {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+
+/*
+ * Breakpoints (media-queries)
+ */
