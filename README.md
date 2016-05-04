@@ -8,8 +8,6 @@ pagina.
 
 ## Instalação
 
-### Obtenha os arquivos
-
 Através do gerenciador de pacotes [Bower](http://bower.io/)
 
 ```bash
@@ -18,8 +16,6 @@ bower install --save blogrid
 
 Ou faça o [download zip](https://github.com/andergtk/blogrid/archive/master.zip)
 do repositório e copie o arquivo `blogrid.css` dentro da pasta do seu projeto.
-
-### Tags necessárias
 
 Você deve adicionar a seguinte tag na seção `<head>` para não ter problemas com
 a visualização em dispositivos móveis.
