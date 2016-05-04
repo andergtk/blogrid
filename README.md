@@ -131,5 +131,3 @@ ou abrir uma [issue](https://github.com/andergtk/blogrid/issues/new).
 ## Licença
 
 MIT License
-
-Copyright (c) 2016 Blogrid
