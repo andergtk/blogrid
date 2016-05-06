@@ -24,7 +24,7 @@ a visualização em dispositivos móveis.
 <meta name="viewport" content="width=device-width, initial-scale=1">
 ```
 
-E também linkar o arquivo do sistema de grid:
+E também *linkar* o arquivo do sistema de grid:
 
 ```html
 <link rel="stylesheet" href="path/to/blogrid.css">
@@ -34,12 +34,12 @@ E também linkar o arquivo do sistema de grid:
 
 Adicione a classe `.grid` para cada *row* do seu template.
 
-Adicione a classe `.col` em casa coluna do seu template.
+Adicione a classe `.col` em cada coluna do seu template.
 
 As classes do grid geral estão nomeadas como frações (`.half`, `.one-third`,
 `.one-fourth`, `.two-fifths`, etc).
 
-**NOTA**: Algumas classes não são necessárias como `.two-fourths` ou
+**nota:** Algumas classes não são necessárias como `.two-fourths` ou
 `.two-sixths` pois existem outras equivalentes (`.half` e `.one-third`,
 respectivamente)
 
