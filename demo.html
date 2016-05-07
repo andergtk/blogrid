@@ -7,27 +7,22 @@
 		<link rel="stylesheet" href="blogrid.css">
 		<style>
 			body {
+				margin: 0;
 				color: #333;
 				font-family: sans-serif;
 			}
-
-			.container { margin: 40px auto; width: 1000px; }
-
-			.text-center { text-align: center; }
-
-			.grid .grid { background-color: rgba(52,152,219,0.3); }
-
 			span {
 				display: block;
-				padding: 0.8em;
-				background-color: rgba(52,152,219,0.2);
-				border: 1px solid #3498DB;
+				padding: 1em;
+				background-color: rgba(52,152,219,0.3);
+				border: 2px solid #3498DB;
 				color: #3498DB;
-				font-size: 1.2em;
+				font-size: 1.12em;
 				font-weight: bold;
 				text-align: center;
 			}
-
+			.container > .grid { margin: 6em 0; }
+			.grid .grid { background-color: rgba(52,152,219,0.3); }
 			.big-height span { padding: 3em 0.8em; }
 		</style>
 	</head>
@@ -42,64 +37,46 @@
 
 			<div class="grid big-height">
 				<div class="col whole">
-					<h2>Content + Sidebar</h2>
+					<h2>Conteúdo + Sidebar</h2>
 				</div>
 				<div class="col content">
-					<span>Content</span>
+					<span>Conteúdo</span>
 				</div>
 				<div class="col sidebar">
 					<span>Sidebar</span>
 				</div>
 			</div>
 
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-
 			<div class="grid big-height">
 				<div class="col whole">
-					<h2>Left sidebar + Content</h2>
+					<h2>Sidebar na esquerda + Content</h2>
 				</div>
 				<div class="col content">
-					<span>Content</span>
+					<span>Conteúdo</span>
 				</div>
 				<div class="col sidebar-left">
-					<span>Left sidebar</span>
+					<span>Sidebar na esquerda</span>
 				</div>
 			</div>
-
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
 
 			<div class="grid big-height">
 				<div class="col whole">
-					<h2>Content + Two sidebars</h2>
+					<h2>Conteúdo + Duas sidebars</h2>
 				</div>
-				<div class="col content-two-sidebars">
-					<span>Content with two sidebars</span>
-				</div>
-				<div class="col sidebar-left">
-					<span>Left sidebar</span>
+				<div class="col content-with-sidebars">
+					<span>Conteúdo com duas sidebars</span>
 				</div>
 				<div class="col sidebar">
-					<span>Right sidebar</span>
+					<span>Sidebar na direita</span>
+				</div>
+				<div class="col sidebar-left">
+					<span>Sidebar na esquerda</span>
 				</div>
 			</div>
-
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
 
 			<div class="grid">
 				<div class="col whole">
-					<h2>General grid</h2>
+					<h2>Grid Geral</h2>
 				</div>
 				<div class="col whole">
 					<span>.whole</span>
@@ -142,15 +119,9 @@
 				</div>
 			</div>
 
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-
 			<div class="grid">
 				<div class="col whole">
-					<h2>Pushing columns</h2>
+					<h2>Empurrar Colunas</h2>
 				</div>
 				<div class="col half push-to-right">
 					<span>.half,<br>
@@ -194,15 +165,9 @@
 				</div>
 			</div>
 
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-
 			<div class="grid">
 				<div class="col whole">
-					<h2>Nested columns</h2>
+					<h2>Grids Aninhados</h2>
 				</div>
 				<div class="col one-fourth">
 					<span>.one-fourth</span>
@@ -230,15 +195,9 @@
 				</div>
 			</div>
 
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-
 			<div class="grid no-gutters">
 				<div class="col whole">
-					<h2>Gutters</h2>
+					<h2>Remover espaço entre colunas</h2>
 				</div>
 				<div class="col one-third">
 					<span>.one-third</span>
@@ -260,6 +219,54 @@
 				</div>
 				<div class="col one-fourth">
 					<span>.one-fourth</span>
+				</div>
+			</div>
+
+			<div class="grid">
+				<div class="col whole">
+					<h2>Breakpoints</h2>
+				</div>
+				<div class="col one-third no-stack-ms">
+					<span>.one-third<br>
+					.no-stack-ms</span>
+				</div>
+				<div class="col one-third no-stack-ms">
+					<span>.one-third<br>
+					.no-stack-ms</span>
+				</div>
+				<div class="col one-third no-stack-ms">
+					<span>.one-third<br>
+					.no-stack-ms</span>
+				</div>
+				<div class="col half no-stack-never">
+					<div class="grid">
+						<div class="col half no-stack-ms">
+							<span>.half<br>
+							.no-stack-ms</span>
+						</div>
+						<div class="col half no-stack-ms">
+							<span>.half<br>
+							.no-stack-ms</span>
+						</div>
+					</div>
+					<div class="grid">
+						<div class="col half no-stack-never">
+							<span>.half<br>
+							.no-stack-never</span>
+						</div>
+						<div class="col half no-stack-never">
+							<span>.half<br>
+							.no-stack-never</span>
+						</div>
+					</div>
+				</div>
+				<div class="col half no-stack-never">
+					<span>.half<br>
+					.no-stack-never</span>
+				</div>
+				<div class="col half no-stack-never">
+					<span>.half<br>
+					.no-stack-never</span>
 				</div>
 			</div>
 		</div><!-- .container -->
