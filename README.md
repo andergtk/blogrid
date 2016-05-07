@@ -36,18 +36,18 @@ Adicione a classe `.grid` para cada *row* do seu site.
 
 Adicione a classe `.col` em cada coluna do seu site.
 
-As classes do grid geral estão nomeadas como frações (`.half`, `.one-third`,
+As colunas do grid geral estão nomeadas como frações (`.half`, `.one-third`,
 `.one-fourth`, `.two-fifths`, etc).
 
 **nota:** Algumas classes não são necessárias como `.two-fourths` ou
 `.two-sixths` pois existem outras equivalentes (`.half` e `.one-third`,
 respectivamente)
 
-O sistema possui dois *breakpoints*, o primeiro em telas com largura máxima de
-`1000px` e para evitar que as colunas fiquem empilhadas e com largura total
-basta adicionar a classe `.no-stack-ms`, o segundo *breakpoint* é em `800px` e
-você pode utilizar `.no-stack-never` para que a coluna continue com seu
-comportamento padrão.
+O sistema possui dois *breakpoints*, o primeiro para telas com largura máxima
+de `1000px`, para evitar que as colunas fiquem empilhadas e com largura total
+basta adicionar a classe `.no-stack-ms`, o segundo *breakpoint* é com `800px` e
+você pode utilizar `.no-stack-never` para que a coluna continue com sua largura
+padrão sempre.
 
 ## Exemplos
 
