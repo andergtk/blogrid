@@ -32,9 +32,9 @@ E também *linkar* o arquivo do sistema de grid:
 
 ## Começando a utilizar
 
-Adicione a classe `.grid` para cada *row* do seu template.
+Adicione a classe `.grid` para cada *row* do seu site.
 
-Adicione a classe `.col` em cada coluna do seu template.
+Adicione a classe `.col` em cada coluna do seu site.
 
 As classes do grid geral estão nomeadas como frações (`.half`, `.one-third`,
 `.one-fourth`, `.two-fifths`, etc).
@@ -43,19 +43,24 @@ As classes do grid geral estão nomeadas como frações (`.half`, `.one-third`,
 `.two-sixths` pois existem outras equivalentes (`.half` e `.one-third`,
 respectivamente)
 
+O sistema possui dois *breakpoints*, o primeiro em telas com largura máxima de
+`1000px` e para evitar que as colunas fiquem empilhadas e com largura total
+basta adicionar a classe `.no-stack-ms`, o segundo *breakpoint* é em `800px` e
+você pode utilizar `.no-stack-never` para que a coluna continue com seu
+comportamento padrão.
+
 ## Exemplos
 
 #### Conteúdo + Sidebar
 
-A sidebar tem a largura de 300 pixels por padrão e a largura do conteúdo é
-ajustada automaticamente.
+A largura da sidebar tem 300px e a do conteúdo é ajustada automaticamente.
 
-![](http://i.imgur.com/jhqQlje.png)
+![Imagem 1](http://i.imgur.com/SsibOcu.png)
 
 ```html
 <div class="grid">
 	<div class="col content">
-		<span>Content</span>
+		<span>Conteúdo</span>
 	</div>
 	<div class="col sidebar">
 		<span>Sidebar</span>
@@ -65,67 +70,67 @@ ajustada automaticamente.
 
 #### Sidebar na esquerda + Conteúdo
 
-![](http://i.imgur.com/3pCDqRc.png)
+![Imagem 2](http://i.imgur.com/fYxbOJr.png)
 
 ```html
 <div class="grid">
 	<div class="col content">
-		<span>Content</span>
+		<span>Conteúdo</span>
 	</div>
 	<div class="col sidebar-left">
-		<span>Left sidebar</span>
+		<span>Sidebar na esquerda</span>
 	</div>
 </div>
 ```
 
 #### Conteúdo + Duas sidebars
 
-![](http://i.imgur.com/Yv1jo17.png)
+![Imagem 3](http://i.imgur.com/0sQa9iJ.png)
 
 ```html
 <div class="grid">
-	<div class="col content-two-sidebars">
-		<span>Content with two sidebars</span>
-	</div>
-	<div class="col sidebar-left">
-		<span>Left sidebar</span>
+	<div class="col content-with-sidebars">
+		<span>Conteúdo com duas sidebars</span>
 	</div>
 	<div class="col sidebar">
-		<span>Right sidebar</span>
+		<span>Sidebar na direita</span>
+	</div>
+	<div class="col sidebar-left">
+		<span>Sidebar na esquerda</span>
 	</div>
 </div>
 ```
 
-#### Grid geral
+#### Grid Geral
 
 Você pode ver o código completo no arquivo `demo.html`.
 
-![](http://i.imgur.com/iHO6vyM.png)
+![Imagem 4](http://i.imgur.com/XAxSntb.png)
 
-#### Empurrando colunas
+#### Empurrar Colunas
 
 Adicione a classe `.push-to-right` ou `.push-<fração>` para empurrar as colunas
 até o local que você quer.
 
-![](http://i.imgur.com/w0sDgk9.png)
+![Imagem 5](http://i.imgur.com/8pU5fSb.png)
 
-#### Grids aninhados
+#### Grids Aninhados
 
 Você pode fazer grids aninhados sem problemas, basta adicionar um novo `.grid`
-dentro de uma coluna do grid pai.
+dentro de uma coluna.
 
-![](http://i.imgur.com/eOirnga.png)
+![Imagem 6](http://i.imgur.com/uGWsLTI.png)
 
-#### Espaço entre colunas (gutters)
+#### Remover espaço entre colunas
 
-Remova o espaçamento entre as colunas adicionando a classe `.no-gutters` no
-`.grid`.
+Remova o espaçamento entre as colunas, que por padrão é de 20px, adicionando a
+classe `.no-gutters` no `.grid`.
 
-![](http://i.imgur.com/Bo7cYZu.png)
+![Imagem 7](http://i.imgur.com/8pU5fSb.png)
 
 ## Contribuindo
 
-Se você tem alguma ideia e quer contribuir é só criar um [pull request](https://github.com/andergtk/blogrid/compare)
+Se você tem alguma ideia e quer contribuir é só dar um [pull request](https://github.com/andergtk/blogrid/compare)
 ou abrir uma [issue](https://github.com/andergtk/blogrid/issues/new).
 
 ## Licença
