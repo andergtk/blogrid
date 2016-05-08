@@ -2,8 +2,8 @@
 
 Grid CSS responsivo para sites com sidebar.
 
-Se você tem um site que utiliza colunas com tamanho fixo nos lados, esse sistema
-de grid pode auxiliar você na organização desses componentes dentro da sua
+Se você tem um site que utiliza colunas com tamanho fixo nos lados, esse
+sistema de grid pode auxiliar você na organização desses componentes na sua
 pagina.
 
 ## Instalação
@@ -32,28 +32,30 @@ E também *linkar* o arquivo do sistema de grid:
 
 ## Começando a utilizar
 
-Adicione a classe `.grid` para cada *row* do seu site.
-
-Adicione a classe `.col` em cada coluna do seu site.
+Basicamente você precisa adicionar a classe `.grid` em cada *row* do seu site e
+a classe `.col` em cada coluna.
 
 As colunas do grid geral estão nomeadas como frações (`.half`, `.one-third`,
 `.one-fourth`, `.two-fifths`, etc).
 
-**nota:** Algumas classes não são necessárias como `.two-fourths` ou
-`.two-sixths` pois existem outras equivalentes (`.half` e `.one-third`,
-respectivamente)
+Algumas classes não são necessárias como `.two-fourths` ou `.two-sixths` pois
+existem outras equivalentes (`.half` e `.one-third`, respectivamente).
 
-O sistema possui dois *breakpoints*, o primeiro para telas com largura máxima
-de `1000px`, para evitar que as colunas fiquem empilhadas e com largura total
-basta adicionar a classe `.no-stack-ms`, o segundo *breakpoint* é com `800px` e
-você pode utilizar `.no-stack-never` para que a coluna continue com sua largura
-padrão sempre.
+O sistema possui dois *breakpoints*, o primeiro é para telas com largura máxima
+de `1000px` e o segundo com `800px`.
+
+Para evitar que as colunas fiquem empilhadas e com a largura total da tela,
+você pode utilizar a classe `.no-stack-ms` para não empilhar apenas no primeiro
+*breakpoint* ou `.no-stack-never` que mantém a largura padrão do grid
+independente da tela.
 
 ## Exemplos
 
+Você pode ver o código completo no arquivo `demo.html`.
+
 #### Conteúdo + Sidebar
 
-A largura da sidebar tem 300px e a do conteúdo é ajustada automaticamente.
+A largura da sidebar tem `300px` e a do conteúdo é ajustada automaticamente.
 
 ![Imagem 1](http://i.imgur.com/SsibOcu.png)
 
@@ -103,8 +105,6 @@ A largura da sidebar tem 300px e a do conteúdo é ajustada automaticamente.
 
 #### Grid Geral
 
-Você pode ver o código completo no arquivo `demo.html`.
-
 ![Imagem 4](http://i.imgur.com/XAxSntb.png)
 
 #### Empurrar Colunas
@@ -135,4 +135,4 @@ ou abrir uma [issue](https://github.com/andergtk/blogrid/issues/new).
 
 ## Licença
 
-MIT License
+The MIT License (MIT)
