@@ -5,9 +5,11 @@
   "homepage": "https://github.com/andergtk/blogrid",
   "main": "blogrid.css",
   "authors": [
-    "name": "Anderson Camargo",
-    "email": "andergtk@gmail.com",
-    "homepage": "https://andersoncamargo.com.br"
+    {
+      "name": "Anderson Camargo",
+      "email": "andergtk@gmail.com",
+      "homepage": "https://andersoncamargo.com.br"
+    }
   ],
   "ignore": [
     "LICENSE",
