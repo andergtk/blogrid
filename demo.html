@@ -4,13 +4,13 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Blogrid - Grid CSS responsivo para sites com sidebar</title>
-		<link rel="stylesheet" href="blogrid.css">
+		<link rel="stylesheet" type="text/css" href="blogrid.css">
 		<style>
 			body {
 				margin: 0;
 				color: #333;
-				font-family: sans-serif;
-			}
+				font-family: sans-serif; }
+
 			span {
 				display: block;
 				padding: 1em;
@@ -19,11 +19,13 @@
 				color: #3498DB;
 				font-size: 1.12em;
 				font-weight: bold;
-				text-align: center;
-			}
-			.container > .grid { margin: 6em 0; }
-			.grid .grid { background-color: rgba(52,152,219,0.3); }
+				text-align: center; }
+
 			.big-height span { padding: 3em 0.8em; }
+
+			.container > .grid { margin: 6em 0; }
+
+			.grid .grid { background-color: rgba(52,152,219,0.3); }
 		</style>
 	</head>
 	<body>
@@ -35,6 +37,7 @@
 				</div>
 			</div>
 
+			<!-- EXEMPLO 1 -->
 			<div class="grid big-height">
 				<div class="col whole">
 					<h2>Conteúdo + Sidebar</h2>
@@ -47,6 +50,7 @@
 				</div>
 			</div>
 
+			<!-- EXEMPLO 2 -->
 			<div class="grid big-height">
 				<div class="col whole">
 					<h2>Sidebar na esquerda + Content</h2>
@@ -59,6 +63,7 @@
 				</div>
 			</div>
 
+			<!-- EXEMPLO 3 -->
 			<div class="grid big-height">
 				<div class="col whole">
 					<h2>Conteúdo + Duas sidebars</h2>
@@ -74,6 +79,7 @@
 				</div>
 			</div>
 
+			<!-- EXEMPLO 4 -->
 			<div class="grid">
 				<div class="col whole">
 					<h2>Grid Geral</h2>
@@ -119,6 +125,7 @@
 				</div>
 			</div>
 
+			<!-- EXEMPLO 5 -->
 			<div class="grid">
 				<div class="col whole">
 					<h2>Empurrar Colunas</h2>
@@ -165,6 +172,7 @@
 				</div>
 			</div>
 
+			<!-- EXEMPLO 6 -->
 			<div class="grid">
 				<div class="col whole">
 					<h2>Grids Aninhados</h2>
@@ -195,6 +203,7 @@
 				</div>
 			</div>
 
+			<!-- EXEMPLO 7 -->
 			<div class="grid no-gutters">
 				<div class="col whole">
 					<h2>Remover espaço entre colunas</h2>
@@ -222,6 +231,7 @@
 				</div>
 			</div>
 
+			<!-- EXEMPLO 8 -->
 			<div class="grid">
 				<div class="col whole">
 					<h2>Breakpoints</h2>
@@ -239,7 +249,7 @@
 					.no-stack-ms</span>
 				</div>
 				<div class="col half no-stack-never">
-					<div class="grid">
+					<div class="grid no-gutters">
 						<div class="col half no-stack-ms">
 							<span>.half<br>
 							.no-stack-ms</span>
