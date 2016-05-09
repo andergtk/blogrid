@@ -57,7 +57,7 @@ Você pode ver o código completo no arquivo `demo.html`.
 
 A largura da sidebar tem `300px` e a do conteúdo é ajustada automaticamente.
 
-![Imagem 1](http://i.imgur.com/SsibOcu.png)
+![Imagem 1](http://i.imgur.com/SsibOcuh.png)
 
 ```html
 <div class="grid">
@@ -72,7 +72,7 @@ A largura da sidebar tem `300px` e a do conteúdo é ajustada automaticamente.
 
 #### Sidebar na esquerda + Conteúdo
 
-![Imagem 2](http://i.imgur.com/fYxbOJr.png)
+![Imagem 2](http://i.imgur.com/fYxbOJrh.png)
 
 ```html
 <div class="grid">
@@ -87,7 +87,7 @@ A largura da sidebar tem `300px` e a do conteúdo é ajustada automaticamente.
 
 #### Conteúdo + Duas sidebars
 
-![Imagem 3](http://i.imgur.com/0sQa9iJ.png)
+![Imagem 3](http://i.imgur.com/0sQa9iJh.png)
 
 ```html
 <div class="grid">
@@ -105,33 +105,33 @@ A largura da sidebar tem `300px` e a do conteúdo é ajustada automaticamente.
 
 #### Grid Geral
 
-![Imagem 4](http://i.imgur.com/XAxSntb.png)
+![Imagem 4](http://i.imgur.com/XAxSntbh.png)
 
 #### Empurrar Colunas
 
 Adicione a classe `.push-to-right` ou `.push-<fração>` para empurrar as colunas
 até o local que você quer.
 
-![Imagem 5](http://i.imgur.com/8pU5fSb.png)
+![Imagem 5](http://i.imgur.com/8pU5fSbh.png)
 
 #### Grids Aninhados
 
 Você pode fazer grids aninhados sem problemas, basta adicionar um novo `.grid`
 dentro de uma coluna.
 
-![Imagem 6](http://i.imgur.com/uGWsLTI.png)
+![Imagem 6](http://i.imgur.com/uGWsLTIh.png)
 
 #### Remover espaço entre colunas
 
 Remova o espaçamento entre as colunas, que por padrão é de 20px, adicionando a
 classe `.no-gutters` no `.grid`.
 
-![Imagem 7](http://i.imgur.com/8pU5fSb.png)
+![Imagem 7](http://i.imgur.com/8pU5fSbh.png)
 
 ## Contribuindo
 
-Se você tem alguma ideia e quer contribuir é só dar um [pull request](https://github.com/andergtk/blogrid/compare)
-ou abrir uma [issue](https://github.com/andergtk/blogrid/issues/new).
+Se você tem alguma ideia e quer contribuir é só dar um [pull request](https://github.com/andergtk/blogrid/pulls)
+ou abrir uma [issue](https://github.com/andergtk/blogrid/issues).
 
 ## Licença
 
