@@ -126,7 +126,7 @@ dentro de uma coluna.
 Remova o espaçamento entre as colunas, que por padrão é de 20px, adicionando a
 classe `.no-gutters` no `.grid`.
 
-![Imagem 7](http://i.imgur.com/8pU5fSbh.png)
+![Imagem 7](http://i.imgur.com/5Bkj0pth.png)
 
 ## Contribuindo
 
