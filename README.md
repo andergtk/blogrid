@@ -35,7 +35,7 @@ E também *linkar* o arquivo do sistema de grid:
 Basicamente você precisa adicionar a classe `.grid` em cada *row* do seu site e
 a classe `.col` em cada coluna.
 
-As colunas do grid geral estão nomeadas como frações (`.half`, `.one-third`,
+As colunas do grid geral são nomeadas como frações (`.half`, `.one-third`,
 `.one-fourth`, `.two-fifths`, etc).
 
 Algumas classes não são necessárias como `.two-fourths` ou `.two-sixths` pois
