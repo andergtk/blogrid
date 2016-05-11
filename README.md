@@ -135,5 +135,4 @@ ou abrir uma [issue](https://github.com/andergtk/blogrid/issues).
 
 ## Licença
 
-The (MIT License)[LICENSE].
-
+The [MIT License](LICENSE).
