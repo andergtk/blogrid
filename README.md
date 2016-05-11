@@ -57,7 +57,7 @@ Você pode ver o código completo no arquivo `demo.html`.
 
 A largura da sidebar tem `300px` e a do conteúdo é ajustada automaticamente.
 
-![Imagem 1](http://i.imgur.com/SsibOcuh.png)
+![Imagem 1](http://i.imgur.com/z4E1P58.png)
 
 ```html
 <div class="grid">
@@ -72,7 +72,7 @@ A largura da sidebar tem `300px` e a do conteúdo é ajustada automaticamente.
 
 #### Sidebar na esquerda + Conteúdo
 
-![Imagem 2](http://i.imgur.com/fYxbOJrh.png)
+![Imagem 2](http://i.imgur.com/uKbtCPP.png)
 
 ```html
 <div class="grid">
@@ -87,7 +87,7 @@ A largura da sidebar tem `300px` e a do conteúdo é ajustada automaticamente.
 
 #### Conteúdo + Duas sidebars
 
-![Imagem 3](http://i.imgur.com/0sQa9iJh.png)
+![Imagem 3](http://i.imgur.com/N0UnVv1.png)a
 
 ```html
 <div class="grid">
@@ -105,28 +105,28 @@ A largura da sidebar tem `300px` e a do conteúdo é ajustada automaticamente.
 
 #### Grid Geral
 
-![Imagem 4](http://i.imgur.com/XAxSntbh.png)
+![Imagem 4](http://i.imgur.com/t63JsdH.png)
 
 #### Empurrar Colunas
 
 Adicione a classe `.push-to-right` ou `.push-<fração>` para empurrar as colunas
 até o local que você quer.
 
-![Imagem 5](http://i.imgur.com/8pU5fSbh.png)
+![Imagem 5](http://i.imgur.com/K2nDJ25.png)
 
 #### Grids Aninhados
 
 Você pode fazer grids aninhados sem problemas, basta adicionar um novo `.grid`
 dentro de uma coluna.
 
-![Imagem 6](http://i.imgur.com/uGWsLTIh.png)
+![Imagem 6](http://i.imgur.com/MG56s9r.png)
 
 #### Remover espaço entre colunas
 
 Remova o espaçamento entre as colunas, que por padrão é de 20px, adicionando a
 classe `.no-gutters` no `.grid`.
 
-![Imagem 7](http://i.imgur.com/5Bkj0pth.png)
+![Imagem 7](http://i.imgur.com/A0NXWyf.png)
 
 ## Contribuindo
 
@@ -135,4 +135,5 @@ ou abrir uma [issue](https://github.com/andergtk/blogrid/issues).
 
 ## Licença
 
-The MIT License (MIT)
+The (MIT License)[LICENSE].
+
