@@ -5,25 +5,33 @@
  * https://github.com/andergtk/blogrid
  */
 
+/* Evita a possível barra de rolagem horizontal */
+body,
+html { height: 100%; }
+
+body {
+	min-height: 100%;
+	overflow-x: hidden;
+}
+
 /* Uma classe container para definir a largura e centralizar a pagina. */
 .container {
-  display: block;
+	display: block;
 	margin: 0 auto;
-	max-width: 1240px;
+	padding: 0 20px;
+	max-width: 1200px;
 }
 
 /* Evita que o padding interfira na largura. */
 .grid,
-.grid .col { box-sizing: border-box }
+.grid .col { box-sizing: border-box; }
 
 /**
  * O GRID
  */
 .grid {
 	display: block;
-	padding-right: 10px;
-	padding-left: 10px;
-	width: 100%;
+	margin: -20px -10px 0;
 	clear: both;
 }
 
@@ -45,41 +53,25 @@
  * AS COLUNAS
  */
 .grid .col {
-  display: block;
+	display: block;
 	float: left;
-	margin-bottom: 20px;
-	padding-right: 10px;
-	padding-left: 10px;
+	padding: 20px 10px 0;
 }
-
-/* Remove o padding desnecessario, pois o elemento pai ja possue. */
-.col .grid {
-	padding-right: 0;
-	padding-left: 0;
-}
-
-.col .grid:last-child .col { margin-bottom: 0; }
-.col .grid .col:first-child { padding-left: 0; }
-.col .grid .col:last-child { padding-right: 0; }
 
 /**
  * O GRID PRINCIPAL
  */
-.grid .content,
-.grid .content-with-sidebars {
+.grid .content {
 	display: inline-block;
 	float: none;
-	width: calc( 100% - 300px );
 }
 
-.grid .content-with-sidebars { width: calc( 100% - 600px ); }
+.grid .content { width: calc( 100% - 300px ); }
+.grid .content.multisidebar { width: calc( 100% - 600px ); }
 
 .grid .sidebar,
-.grid .sidebar-left {
-	float: right;
-	width: 300px;
-}
-
+.grid .sidebar-left { width: 300px; }
+.grid .sidebar { float: right; }
 .grid .sidebar-left { float: left; }
 
 /**
@@ -124,49 +116,30 @@
 /**
  * REMOVER ESPAÇO ENTRE COLUNAS
  */
-/* Compensa o padding tirado das colunas. */
 .no-gutters.grid {
-	padding-right: 20px;
-	padding-left: 20px;
+	margin-right: 0;
+	margin-left: 0;
 }
 
-.no-gutters > .col,
-/* Anula efeito de compensar o padding, adicionado acima, em grids aninhados */
-.col .no-gutters.grid {
-  padding-right: 0;
+.no-gutters.grid > .col {
+	padding-right: 0;
 	padding-left: 0;
 }
 
 /**
  * BREAKPOINTS
  */
+@media ( max-width: 1300px ) {
 
-/* Medium Screen */
-@media ( max-width: 1000px ) {
-
-	/* Empilha colunas que nao tem determinadas classes */
-	.grid .col:not(.no-stack-never):not(.no-stack-ms) {
-		float: none;
-		margin: 0 0 20px; /* anula o efeito da classe .push-* */
-		width: 100%;
-		clear: both;
-	}
-
-	/* Remove padding de colunas em grids aninhados e adiciona margin-bottom. */
-	.col .grid .col:not(.no-stack-ms):not(.no-stack-never) { padding: 0; }
-	.col .grid:last-child .col:last-child { margin-bottom: 0; }
+	.container { max-width: 1100px; }
 }
 
-/* Small Screen */
-@media ( max-width: 800px ) {
+@media ( max-width: 960px ) {
 
-	/* Empilha colunas que nao tem a classe .no-stack-never. */
-	.grid .col:not(.no-stack-never) {
-		float: none;
-		margin: 0 0 20px; /* anula o efeito da classe .push-* */
+	/* Empilha colunas em que o .grid nao tem a classe .no-stack. */
+	.grid:not(.no-stack) > .col {
+		margin: 0; /* anula o efeito da classe .push-* */
 		width: 100%;
 		clear: both;
 	}
-
-	.col .grid .col:not(.no-stack-never) { padding: 0; }
 }
