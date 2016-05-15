@@ -2,7 +2,7 @@
 
 Grid CSS responsivo para sites com sidebar.
 
-Se você tem um site que utiliza colunas com tamanho fixo nos lados, esse
+Se você tem um site que utiliza colunas com tamanho fixo nas laterais, esse
 sistema de grid pode auxiliar você na organização desses componentes na sua
 pagina.
 
@@ -10,9 +10,7 @@ pagina.
 
 Através do gerenciador de pacotes [Bower](http://bower.io/)
 
-```bash
-bower install --save blogrid
-```
+>bower install --save blogrid
 
 Ou faça o [download zip](https://github.com/andergtk/blogrid/archive/master.zip)
 do repositório e copie o arquivo `blogrid.css` dentro da pasta do seu projeto.
@@ -32,8 +30,7 @@ E também *linkar* o arquivo do sistema de grid:
 
 ## Começando a utilizar
 
-Basicamente você precisa adicionar a classe `.grid` em cada *row* do seu site e
-a classe `.col` em cada coluna.
+Basicamente você precisa adicionar a classe `.grid` em cada *row* do seu site e a classe `.col` em cada coluna.
 
 As colunas do grid geral são nomeadas como frações (`.half`, `.one-third`,
 `.one-fourth`, `.two-fifths`, etc).
@@ -42,12 +39,9 @@ Algumas classes não são necessárias como `.two-fourths` ou `.two-sixths` pois
 existem outras equivalentes (`.half` e `.one-third`, respectivamente).
 
 O sistema possui dois *breakpoints*, o primeiro é para telas com largura máxima
-de `1000px` e o segundo com `800px`.
+de `1300px`, que reduz a largura da classe `.container` que vem por padrão de `1200px` para `1100px`, e o segundo *breakpoint* é com `960px`, que serve para empihar as colunas em dispositivos menores.
 
-Para evitar que as colunas fiquem empilhadas e com a largura total da tela,
-você pode utilizar a classe `.no-stack-ms` para não empilhar apenas no primeiro
-*breakpoint* ou `.no-stack-never` que mantém a largura padrão do grid
-independente da tela.
+Para evitar que as colunas fiquem empilhadas e com a largura total da tela, você pode adicionar a classe `.no-stack` no `.grid` que manterá a largura padrão, independente to tamanho de tela.
 
 ## Exemplos
 
@@ -57,7 +51,7 @@ Você pode ver o código completo no arquivo `demo.html`.
 
 A largura da sidebar tem `300px` e a do conteúdo é ajustada automaticamente.
 
-![Imagem 1](http://i.imgur.com/z4E1P58.png)
+![Imagem 1](http://i.imgur.com/VE53rfd.png)
 
 ```html
 <div class="grid">
@@ -72,7 +66,7 @@ A largura da sidebar tem `300px` e a do conteúdo é ajustada automaticamente.
 
 #### Sidebar na esquerda + Conteúdo
 
-![Imagem 2](http://i.imgur.com/uKbtCPP.png)
+![Imagem 2](http://i.imgur.com/FTClEYp.png)
 
 ```html
 <div class="grid">
@@ -85,14 +79,14 @@ A largura da sidebar tem `300px` e a do conteúdo é ajustada automaticamente.
 </div>
 ```
 
-#### Conteúdo + Duas sidebars
+#### Conteúdo com multisidebar
 
-![Imagem 3](http://i.imgur.com/N0UnVv1.png)a
+![Imagem 3](http://i.imgur.com/pZVJwdT.png)
 
 ```html
 <div class="grid">
-	<div class="col content-with-sidebars">
-		<span>Conteúdo com duas sidebars</span>
+	<div class="col content multisidebar">
+		<span>Conteúdo com multisidebar</span>
 	</div>
 	<div class="col sidebar">
 		<span>Sidebar na direita</span>
@@ -105,28 +99,28 @@ A largura da sidebar tem `300px` e a do conteúdo é ajustada automaticamente.
 
 #### Grid Geral
 
-![Imagem 4](http://i.imgur.com/t63JsdH.png)
+![Imagem 4](http://i.imgur.com/6W3kwRB.png)
 
 #### Empurrar Colunas
 
 Adicione a classe `.push-to-right` ou `.push-<fração>` para empurrar as colunas
 até o local que você quer.
 
-![Imagem 5](http://i.imgur.com/K2nDJ25.png)
+![Imagem 5](http://i.imgur.com/JKNOL7Q.png)
 
 #### Grids Aninhados
 
-Você pode fazer grids aninhados sem problemas, basta adicionar um novo `.grid`
-dentro de uma coluna.
+Você pode fazer grids aninhados sem problemas, basta adicionar um novo elemento
+`.grid` dentro de uma coluna.
 
-![Imagem 6](http://i.imgur.com/MG56s9r.png)
+![Imagem 6](http://i.imgur.com/eZZRj8I.png)
 
 #### Remover espaço entre colunas
 
 Remova o espaçamento entre as colunas, que por padrão é de 20px, adicionando a
 classe `.no-gutters` no `.grid`.
 
-![Imagem 7](http://i.imgur.com/A0NXWyf.png)
+![Imagem 7](http://i.imgur.com/sqCAhaE.png)
 
 ## Contribuindo
 
