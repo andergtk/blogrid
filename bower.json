@@ -1,6 +1,6 @@
 {
   "name": "blogrid",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Grid CSS responsivo para sites com sidebar",
   "homepage": "https://github.com/andergtk/blogrid",
   "main": "blogrid.css",
@@ -21,3 +21,4 @@
   ],
   "license": "MIT"
 }
+
