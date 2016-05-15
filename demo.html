@@ -9,23 +9,29 @@
 			body {
 				margin: 0;
 				color: #333;
-				font-family: sans-serif; }
-
-			span {
+				font-family: sans-serif;
+			}
+			h1 { margin: 60px 0 30px; }
+			h2 { margin: 100px 0 30px; }
+			strong {
 				display: block;
-				padding: 1em;
-				background-color: rgba(52,152,219,0.3);
-				border: 2px solid #3498DB;
-				color: #3498DB;
-				font-size: 1.12em;
+				margin: 20px 0 0;
+				color: #5C6A79;
+				font-size: 1.4em;
 				font-weight: bold;
-				text-align: center; }
-
-			.big-height span { padding: 3em 0.8em; }
-
-			.container > .grid { margin: 6em 0; }
-
-			.grid .grid { background-color: rgba(52,152,219,0.3); }
+				text-align: center;
+			}
+			span {
+				box-sizing: border-box;
+				display: block;
+				padding: 1.2em 0.4em;
+				background-color: #22A7F0;
+				border: 3px solid #1297E0;
+				color: #fff;
+				font-size: 1.4em;
+				text-align: center;
+				line-height: 1.3;
+			}
 		</style>
 	</head>
 	<body>
@@ -38,10 +44,8 @@
 			</div>
 
 			<!-- EXEMPLO 1 -->
-			<div class="grid big-height">
-				<div class="col whole">
-					<h2>Conteúdo + Sidebar</h2>
-				</div>
+			<h2>Conteúdo + Sidebar</h2>
+			<div class="grid">
 				<div class="col content">
 					<span>Conteúdo</span>
 				</div>
@@ -51,10 +55,8 @@
 			</div>
 
 			<!-- EXEMPLO 2 -->
-			<div class="grid big-height">
-				<div class="col whole">
-					<h2>Sidebar na esquerda + Content</h2>
-				</div>
+			<h2>Sidebar na esquerda + Conteúdo</h2>
+			<div class="grid">
 				<div class="col content">
 					<span>Conteúdo</span>
 				</div>
@@ -64,12 +66,10 @@
 			</div>
 
 			<!-- EXEMPLO 3 -->
-			<div class="grid big-height">
-				<div class="col whole">
-					<h2>Conteúdo + Duas sidebars</h2>
-				</div>
-				<div class="col content-with-sidebars">
-					<span>Conteúdo com duas sidebars</span>
+			<h2>Conteúdo com multisidebar</h2>
+			<div class="grid">
+				<div class="col content multisidebar">
+					<span>Conteúdo com multisidebar</span>
 				</div>
 				<div class="col sidebar">
 					<span>Sidebar na direita</span>
@@ -80,12 +80,10 @@
 			</div>
 
 			<!-- EXEMPLO 4 -->
+			<h2>Grid Geral</h2>
 			<div class="grid">
-				<div class="col whole">
-					<h2>Grid Geral</h2>
-				</div>
-				<div class="col whole">
-					<span>.whole</span>
+				<div class="col full-width">
+					<span>.full-width</span>
 				</div>
 				<div class="col half">
 					<span>.half</span>
@@ -102,8 +100,8 @@
 				<div class="col one-fourth">
 					<span>.one-fourth</span>
 				</div>
-				<div class="col three-quarters">
-					<span>.three-quarters</span>
+				<div class="col three-fourths">
+					<span>.three-fourths</span>
 				</div>
 				<div class="col one-fifth">
 					<span>.one-fifth</span>
@@ -126,102 +124,104 @@
 			</div>
 
 			<!-- EXEMPLO 5 -->
+			<h2>Empurrar Colunas</h2>
 			<div class="grid">
-				<div class="col whole">
-					<h2>Empurrar Colunas</h2>
+				<div class="col one-sixth">
+					<span>.one-sixth</span>
 				</div>
-				<div class="col half push-to-right">
-					<span>.half,<br>
-					.push-to-right</span>
-				</div>
-				<div class="col half">
-					<span>.half</span>
-				</div>
-				<div class="col half push-half">
-					<span>.half,<br>
-					.push-half</span>
+				<div class="col half push-one-third">
+					<span>.half +<br>
+					.push-one-third</span>
 				</div>
 				<div class="col one-third">
 					<span>.one-third</span>
 				</div>
 				<div class="col one-third push-one-third">
-					<span>.one-third,<br>
+					<span>.one-third +<br>
 					.push-one-third</span>
 				</div>
 				<div class="col one-third push-two-thirds">
-					<span>.one-third,<br>
+					<span>.one-third +<br>
 					.push-two-thirds</span>
 				</div>
 				<div class="col one-fourth">
 					<span>.one-fourth</span>
 				</div>
 				<div class="col one-fourth push-half">
-					<span>.one-fourth,<br>
+					<span>.one-fourth +<br>
 					.push-half</span>
 				</div>
 				<div class="col one-quarter push-three-quarters">
-					<span>.one-quarter,<br>
+					<span>.one-quarter +<br>
 					.push-three-quarters</span>
 				</div>
 				<div class="col one-fifth">
 					<span>.one-fifth</span>
 				</div>
 				<div class="col two-fifths push-two-fifths">
-					<span>.two-fifths,<br>
+					<span>.two-fifths +<br>
 					.push-two-fifths</span>
 				</div>
 			</div>
 
 			<!-- EXEMPLO 6 -->
+			<h2>Grids Aninhados</h2>
 			<div class="grid">
-				<div class="col whole">
-					<h2>Grids Aninhados</h2>
-				</div>
-				<div class="col one-fourth">
-					<span>.one-fourth</span>
-				</div>
-				<div class="col one-quarter">
-					<span>.one-quarter</span>
+				<div class="col half">
+					<div class="grid">
+						<div class="col whole">
+							<span>.half</span>
+						</div>
+					</div>
+					<div class="grid no-gutters">
+						<div class="col whole">
+							<strong>Novo Grid</strong>
+						</div>
+						<div class="col one-third">
+							<span>.one-third</span>
+						</div>
+						<div class="col one-third">
+							<span>.one-third</span>
+						</div>
+						<div class="col one-third">
+							<span>.one-third</span>
+						</div>
+					</div>
 				</div>
 				<div class="col half">
 					<div class="grid">
 						<div class="col whole">
-							<span>.whole</span>
+							<span>.half</span>
 						</div>
 					</div>
-					<div class="grid big-height">
-						<div class="col one-third">
-							<span>.one-third</span>
+					<div class="grid">
+						<div class="col whole">
+							<strong>Novo Grid</strong>
 						</div>
-						<div class="col one-third">
-							<span>.one-third</span>
+						<div class="col half">
+							<span>.half</span>
 						</div>
-						<div class="col one-third">
-							<span>.one-third</span>
+						<div class="col half">
+							<span>.half</span>
 						</div>
 					</div>
 				</div>
 			</div>
 
 			<!-- EXEMPLO 7 -->
+			<h2>Remover espaço entre colunas</h2>
 			<div class="grid no-gutters">
-				<div class="col whole">
-					<h2>Remover espaço entre colunas</h2>
+				<div class="col one-sixth">
+					<span>.one-sixth</span>
 				</div>
-				<div class="col one-third">
-					<span>.one-third</span>
+				<div class="col one-sixth">
+					<span>.one-sixth</span>
 				</div>
-				<div class="col one-third">
-					<span>.one-third</span>
+				<div class="col two-thirds">
+					<span>.two-thirds</span>
 				</div>
-				<div class="col one-third">
-					<span>.one-third</span>
-				</div>
-				<div class="col one-fourth">
-					<span>.one-fourth</span>
-				</div>
-				<div class="col one-fourth">
-					<span>.one-fourth</span>
+				<div class="col half">
+					<span>.half</span>
 				</div>
 				<div class="col one-fourth">
 					<span>.one-fourth</span>
@@ -232,51 +232,34 @@
 			</div>
 
 			<!-- EXEMPLO 8 -->
+			<h2>Breakpoints</h2>
 			<div class="grid">
-				<div class="col whole">
-					<h2>Breakpoints</h2>
-				</div>
-				<div class="col one-third no-stack-ms">
-					<span>.one-third<br>
-					.no-stack-ms</span>
-				</div>
-				<div class="col one-third no-stack-ms">
-					<span>.one-third<br>
-					.no-stack-ms</span>
-				</div>
-				<div class="col one-third no-stack-ms">
-					<span>.one-third<br>
-					.no-stack-ms</span>
-				</div>
-				<div class="col half no-stack-never">
-					<div class="grid no-gutters">
-						<div class="col half no-stack-ms">
-							<span>.half<br>
-							.no-stack-ms</span>
+				<div class="col two-thirds">
+					<div class="grid no-gutters no-stack">
+						<div class="col whole">
+							<span>.grid +<br>
+							.no-stack</span>
 						</div>
-						<div class="col half no-stack-ms">
-							<span>.half<br>
-							.no-stack-ms</span>
+						<div class="col half">
+							<span>.half</span>
 						</div>
-					</div>
-					<div class="grid">
-						<div class="col half no-stack-never">
-							<span>.half<br>
-							.no-stack-never</span>
-						</div>
-						<div class="col half no-stack-never">
-							<span>.half<br>
-							.no-stack-never</span>
+						<div class="col half">
+							<div class="grid">
+								<div class="col whole">
+									<span>.grid</span>
+								</div>
+								<div class="col half">
+									<span>.half</span>
+								</div>
+								<div class="col half">
+									<span>.half</span>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col half no-stack-never">
-					<span>.half<br>
-					.no-stack-never</span>
-				</div>
-				<div class="col half no-stack-never">
-					<span>.half<br>
-					.no-stack-never</span>
+				<div class="col one-third">
+					<span>.one-third</span>
 				</div>
 			</div>
 		</div><!-- .container -->
