@@ -3,43 +3,18 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Blogrid - Grid CSS responsivo para sites com sidebar</title>
-		<link rel="stylesheet" type="text/css" href="blogrid.css">
-		<style>
-			body {
-				margin: 0;
-				color: #333;
-				font-family: sans-serif;
-			}
-			h1 { margin: 60px 0 30px; }
-			h2 { margin: 100px 0 30px; }
-			strong {
-				display: block;
-				margin: 20px 0 0;
-				color: #5C6A79;
-				font-size: 1.4em;
-				font-weight: bold;
-				text-align: center;
-			}
-			span {
-				box-sizing: border-box;
-				display: block;
-				padding: 1.2em 0.4em;
-				background-color: #22A7F0;
-				border: 3px solid #1297E0;
-				color: #fff;
-				font-size: 1.4em;
-				text-align: center;
-				line-height: 1.3;
-			}
-		</style>
+		<title>Blogrid</title>
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:500,700">
+		<link rel="stylesheet" type="text/css" href="css/blogrid.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
+		<a href="https://your-url" class="github-corner"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#fff; color:#22A7F0; position: absolute; top: 0; border: 0; right: 0;"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
 		<div class="container">
 			<div class="grid">
 				<div class="col whole">
 					<h1>Blogrid</h1>
-					<p>Grid CSS responsivo para sites com sidebar.</p>
+					<p class="description">Grid CSS responsivo para sites com sidebar.</p>
 				</div>
 			</div>
 
@@ -47,10 +22,10 @@
 			<h2>Conteúdo + Sidebar</h2>
 			<div class="grid">
 				<div class="col content">
-					<span>Conteúdo</span>
+					<span class="column"></span>
 				</div>
 				<div class="col sidebar">
-					<span>Sidebar</span>
+					<span class="column"></span>
 				</div>
 			</div>
 
@@ -58,10 +33,10 @@
 			<h2>Sidebar na esquerda + Conteúdo</h2>
 			<div class="grid">
 				<div class="col content">
-					<span>Conteúdo</span>
+					<span class="column"></span>
 				</div>
 				<div class="col sidebar-left">
-					<span>Sidebar na esquerda</span>
+					<span class="column"></span>
 				</div>
 			</div>
 
@@ -69,13 +44,13 @@
 			<h2>Conteúdo com multisidebar</h2>
 			<div class="grid">
 				<div class="col content multisidebar">
-					<span>Conteúdo com multisidebar</span>
+					<span class="column"></span>
 				</div>
 				<div class="col sidebar">
-					<span>Sidebar na direita</span>
+					<span class="column"></span>
 				</div>
 				<div class="col sidebar-left">
-					<span>Sidebar na esquerda</span>
+					<span class="column"></span>
 				</div>
 			</div>
 
@@ -83,43 +58,43 @@
 			<h2>Grid Geral</h2>
 			<div class="grid">
 				<div class="col full-width">
-					<span>.full-width</span>
+					<span class="column"></span>
 				</div>
 				<div class="col half">
-					<span>.half</span>
+					<span class="column"></span>
 				</div>
 				<div class="col half">
-					<span>.half</span>
+					<span class="column"></span>
 				</div>
 				<div class="col one-third">
-					<span>.one-third</span>
+					<span class="column"></span>
 				</div>
 				<div class="col two-thirds">
-					<span>.two-thirds</span>
+					<span class="column"></span>
 				</div>
 				<div class="col one-fourth">
-					<span>.one-fourth</span>
+					<span class="column"></span>
 				</div>
 				<div class="col three-fourths">
-					<span>.three-fourths</span>
+					<span class="column"></span>
 				</div>
 				<div class="col one-fifth">
-					<span>.one-fifth</span>
+					<span class="column"></span>
 				</div>
 				<div class="col four-fifths">
-					<span>.four-fifths</span>
+					<span class="column"></span>
 				</div>
 				<div class="col two-fifths">
-					<span>.two-fifths</span>
+					<span class="column"></span>
 				</div>
 				<div class="col three-fifths">
-					<span>.three-fifths</span>
+					<span class="column"></span>
 				</div>
 				<div class="col one-sixth">
-					<span>.one-sixth</span>
+					<span class="column"></span>
 				</div>
 				<div class="col five-sixths">
-					<span>.five-sixths</span>
+					<span class="column"></span>
 				</div>
 			</div>
 
@@ -127,40 +102,34 @@
 			<h2>Empurrar Colunas</h2>
 			<div class="grid">
 				<div class="col one-sixth">
-					<span>.one-sixth</span>
+					<span class="column"></span>
 				</div>
 				<div class="col half push-one-third">
-					<span>.half +<br>
-					.push-one-third</span>
+					<span class="column"></span>
 				</div>
 				<div class="col one-third">
-					<span>.one-third</span>
+					<span class="column"></span>
 				</div>
 				<div class="col one-third push-one-third">
-					<span>.one-third +<br>
-					.push-one-third</span>
+					<span class="column"></span>
 				</div>
 				<div class="col one-third push-two-thirds">
-					<span>.one-third +<br>
-					.push-two-thirds</span>
+					<span class="column"></span>
 				</div>
 				<div class="col one-fourth">
-					<span>.one-fourth</span>
+					<span class="column"></span>
 				</div>
 				<div class="col one-fourth push-half">
-					<span>.one-fourth +<br>
-					.push-half</span>
+					<span class="column"></span>
 				</div>
 				<div class="col one-quarter push-three-quarters">
-					<span>.one-quarter +<br>
-					.push-three-quarters</span>
+					<span class="column"></span>
 				</div>
 				<div class="col one-fifth">
-					<span>.one-fifth</span>
+					<span class="column"></span>
 				</div>
 				<div class="col two-fifths push-two-fifths">
-					<span>.two-fifths +<br>
-					.push-two-fifths</span>
+					<span class="column"></span>
 				</div>
 			</div>
 
@@ -170,7 +139,7 @@
 				<div class="col half">
 					<div class="grid">
 						<div class="col whole">
-							<span>.half</span>
+							<span class="column"></span>
 						</div>
 					</div>
 					<div class="grid no-gutters">
@@ -178,20 +147,20 @@
 							<strong>Novo Grid</strong>
 						</div>
 						<div class="col one-third">
-							<span>.one-third</span>
+							<span class="column different"></span>
 						</div>
 						<div class="col one-third">
-							<span>.one-third</span>
+							<span class="column"></span>
 						</div>
 						<div class="col one-third">
-							<span>.one-third</span>
+							<span class="column different"></span>
 						</div>
 					</div>
 				</div>
 				<div class="col half">
 					<div class="grid">
 						<div class="col whole">
-							<span>.half</span>
+							<span class="column"></span>
 						</div>
 					</div>
 					<div class="grid">
@@ -199,10 +168,10 @@
 							<strong>Novo Grid</strong>
 						</div>
 						<div class="col half">
-							<span>.half</span>
+							<span class="column"></span>
 						</div>
 						<div class="col half">
-							<span>.half</span>
+							<span class="column"></span>
 						</div>
 					</div>
 				</div>
@@ -212,22 +181,22 @@
 			<h2>Remover espaço entre colunas</h2>
 			<div class="grid no-gutters">
 				<div class="col one-sixth">
-					<span>.one-sixth</span>
+					<span class="column different"></span>
 				</div>
 				<div class="col one-sixth">
-					<span>.one-sixth</span>
+					<span class="column"></span>
 				</div>
 				<div class="col two-thirds">
-					<span>.two-thirds</span>
+					<span class="column different"></span>
 				</div>
 				<div class="col half">
-					<span>.half</span>
+					<span class="column"></span>
 				</div>
 				<div class="col one-fourth">
-					<span>.one-fourth</span>
+					<span class="column different"></span>
 				</div>
 				<div class="col one-fourth">
-					<span>.one-fourth</span>
+					<span class="column"></span>
 				</div>
 			</div>
 
@@ -237,29 +206,33 @@
 				<div class="col two-thirds">
 					<div class="grid no-gutters no-stack">
 						<div class="col whole">
-							<span>.grid +<br>
-							.no-stack</span>
+							<span class="column"></span>
 						</div>
 						<div class="col half">
-							<span>.half</span>
+							<span class="column"></span>
 						</div>
 						<div class="col half">
 							<div class="grid">
 								<div class="col whole">
-									<span>.grid</span>
+									<span class="column different"></span>
 								</div>
 								<div class="col half">
-									<span>.half</span>
+									<span class="column"></span>
 								</div>
 								<div class="col half">
-									<span>.half</span>
+									<span class="column"></span>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="col one-third">
-					<span>.one-third</span>
+					<span class="column"></span>
+				</div>
+			</div>
+			<div class="grid">
+				<div class="col whole">
+					<p class="credits"><span class="prefix">Por</span> <a href="https://andersoncamargo.com.br/" target="_blank">Anderson Camargo</a></p>
 				</div>
 			</div>
 		</div><!-- .container -->
