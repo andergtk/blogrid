@@ -1,7 +1,7 @@
 {
   "name": "blogrid",
-  "version": "0.3.0",
-  "description": "Grid CSS responsivo para sites com sidebar",
+  "version": "0.3.1",
+  "description": "Grid CSS responsivo para sites com sidebar.",
   "homepage": "https://github.com/andergtk/blogrid",
   "main": "blogrid.css",
   "authors": [
@@ -11,14 +11,9 @@
       "homepage": "https://andersoncamargo.com.br"
     }
   ],
-  "ignore": [
-    "LICENSE",
-    "README.md"
-  ],
   "keywords": [
     "css",
     "grid"
   ],
   "license": "MIT"
 }
-
