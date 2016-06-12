@@ -52,9 +52,6 @@ independente to tamanho de tela.
 
 ## [Demo aqui](http://andergtk.github.io/blogrid/)
 
-Você também pode ver o código do exemplo
-[clicando aqui](https://github.com/andergtk/blogrid/blob/gh-pages/index.html).
-
 ## Contribuindo
 
 Se você tem alguma ideia e quer contribuir é só criar um
