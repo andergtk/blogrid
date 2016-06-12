@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Blogrid</title>
 		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:500,700">
+		<link rel="stylesheet" type="text/css" href="css/prism.css">
 		<link rel="stylesheet" type="text/css" href="css/blogrid.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
@@ -13,7 +14,7 @@
 		<div class="container">
 			<div class="grid">
 				<div class="col whole">
-					<h1>Blogrid</h1>
+					<h1 class="title">Blogrid</h1>
 					<p class="description">Grid CSS responsivo para sites com sidebar.</p>
 				</div>
 			</div>
@@ -28,9 +29,10 @@
 					<span class="column"></span>
 				</div>
 			</div>
+			<pre class="code language-html" data-src="examples/1.html"></pre>
 
 			<!-- EXEMPLO 2 -->
-			<h2>Sidebar na esquerda + Conteúdo</h2>
+			<h2>Conteúdo + Sidebar na esquerda</h2>
 			<div class="grid">
 				<div class="col content">
 					<span class="column"></span>
@@ -39,6 +41,7 @@
 					<span class="column"></span>
 				</div>
 			</div>
+			<pre class="code language-html" data-src="examples/2.html"></pre>
 
 			<!-- EXEMPLO 3 -->
 			<h2>Conteúdo com multisidebar</h2>
@@ -53,11 +56,15 @@
 					<span class="column"></span>
 				</div>
 			</div>
+			<pre class="code language-html" data-src="examples/3.html"></pre>
 
 			<!-- EXEMPLO 4 -->
 			<h2>Grid Geral</h2>
 			<div class="grid">
 				<div class="col full-width">
+					<span class="column"></span>
+				</div>
+				<div class="col whole">
 					<span class="column"></span>
 				</div>
 				<div class="col half">
@@ -97,9 +104,10 @@
 					<span class="column"></span>
 				</div>
 			</div>
+			<pre class="code language-html" data-src="examples/4.html"></pre>
 
 			<!-- EXEMPLO 5 -->
-			<h2>Empurrar Colunas</h2>
+			<h2>Empurrar as colunas</h2>
 			<div class="grid">
 				<div class="col one-sixth">
 					<span class="column"></span>
@@ -132,40 +140,40 @@
 					<span class="column"></span>
 				</div>
 			</div>
+			<pre class="code language-html" data-src="examples/5.html"></pre>
 
 			<!-- EXEMPLO 6 -->
-			<h2>Grids Aninhados</h2>
+			<h2>Grids aninhados</h2>
 			<div class="grid">
+				<div class="col whole">
+					<span class="column"></span>
+				</div>
 				<div class="col half">
 					<div class="grid">
 						<div class="col whole">
-							<span class="column"></span>
-						</div>
-					</div>
-					<div class="grid no-gutters">
-						<div class="col whole">
 							<strong>Novo Grid</strong>
 						</div>
-						<div class="col one-third">
-							<span class="column different"></span>
+						<div class="col whole">
+							<span class="column"></span>
 						</div>
 						<div class="col one-third">
 							<span class="column"></span>
 						</div>
 						<div class="col one-third">
-							<span class="column different"></span>
+							<span class="column"></span>
+						</div>
+						<div class="col one-third">
+							<span class="column"></span>
 						</div>
 					</div>
 				</div>
 				<div class="col half">
 					<div class="grid">
 						<div class="col whole">
-							<span class="column"></span>
-						</div>
-					</div>
-					<div class="grid">
-						<div class="col whole">
 							<strong>Novo Grid</strong>
+						</div>
+						<div class="col whole">
+							<span class="column"></span>
 						</div>
 						<div class="col half">
 							<span class="column"></span>
@@ -176,53 +184,54 @@
 					</div>
 				</div>
 			</div>
+			<pre class="code language-html" data-src="examples/6.html"></pre>
 
 			<!-- EXEMPLO 7 -->
-			<h2>Remover espaço entre colunas</h2>
+			<h2>Remover o espaço entre as colunas</h2>
 			<div class="grid no-gutters">
-				<div class="col one-sixth">
+				<div class="col one-fifth">
 					<span class="column different"></span>
 				</div>
-				<div class="col one-sixth">
+				<div class="col one-fifth">
 					<span class="column"></span>
 				</div>
-				<div class="col two-thirds">
+				<div class="col one-fifth">
 					<span class="column different"></span>
 				</div>
-				<div class="col half">
+				<div class="col one-fifth">
 					<span class="column"></span>
 				</div>
-				<div class="col one-fourth">
+				<div class="col one-fifth">
 					<span class="column different"></span>
 				</div>
-				<div class="col one-fourth">
+				<div class="col one-third">
+					<span class="column"></span>
+				</div>
+				<div class="col one-third">
+					<span class="column different"></span>
+				</div>
+				<div class="col one-third">
 					<span class="column"></span>
 				</div>
 			</div>
+			<pre class="code language-html" data-src="examples/7.html"></pre>
 
 			<!-- EXEMPLO 8 -->
 			<h2>Breakpoints</h2>
 			<div class="grid">
-				<div class="col two-thirds">
-					<div class="grid no-gutters no-stack">
+				<div class="col one-third">
+					<span class="column"></span>
+				</div>
+				<div class="col one-third">
+					<div class="grid no-stack">
 						<div class="col whole">
-							<span class="column"></span>
+							<span class="column different"></span>
 						</div>
 						<div class="col half">
-							<span class="column"></span>
+							<span class="column different"></span>
 						</div>
 						<div class="col half">
-							<div class="grid">
-								<div class="col whole">
-									<span class="column different"></span>
-								</div>
-								<div class="col half">
-									<span class="column"></span>
-								</div>
-								<div class="col half">
-									<span class="column"></span>
-								</div>
-							</div>
+							<span class="column different"></span>
 						</div>
 					</div>
 				</div>
@@ -230,11 +239,15 @@
 					<span class="column"></span>
 				</div>
 			</div>
+			<pre class="code language-html" data-src="examples/8.html"></pre>
+
 			<div class="grid">
 				<div class="col whole">
 					<p class="credits"><span class="prefix">Por</span> <a href="https://andersoncamargo.com.br/" target="_blank">Anderson Camargo</a></p>
 				</div>
 			</div>
 		</div><!-- .container -->
+
+		<script src="js/prism.js"></script>
 	</body>
 </html>
