@@ -14,7 +14,7 @@ Via [Bower](http://bower.io/)
 bower install --save blogrid
 ```
 
-Ou faça o [download zip](https://github.com/andergtk/blogrid/archive/master.zip)
+Ou faça o [download ZIP](https://github.com/andergtk/blogrid/archive/v0.3.2.zip)
 do repositório e copie o arquivo `blogrid.css` dentro da pasta do seu projeto.
 
 ## Configurar
