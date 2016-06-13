@@ -6,7 +6,7 @@ body {
 }
 
 h1 {
-  margin: 1em 0 0.5em;
+  margin: 0.5em 0;
   font-size: 4em;
 }
 
@@ -17,7 +17,7 @@ h2 {
 }
 
 h3 {
-  margin: 1.333em 0 1.333em;
+  margin: 0.667em 0;
   font-size: 1.5em;
   font-weight: 500;
 }
@@ -33,21 +33,30 @@ a {
 a:hover { border-bottom-color: #fff; }
 
 .text-center { text-align: center; }
-.description { font-size: 1.25em; }
 
-.download {
-  margin: 2em 0 1em;
-  text-align: center;
+.container { max-width: 1060px; }
+
+.header {
+  display: block;
+  padding: 2em 0;
+  background-color: #fff;
+  color: #1297E0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.description {
+  font-size: 2em;
+  font-weight: 300;
 }
 
 .download-btn {
   display: inline-block;
-  margin: 0.375em;
+  margin: 1.455em 0 0;
   padding: 1em 2em;
   border: 0;
   border-radius: 2px;
-  background-color: #fff;
-  color: #1297E0;
+  background-color: #1297E0;
+  color: #fff;
   font-size: 1.375em;
   transition: all 0.2s ease-in-out;
   box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.3);
