@@ -1,4 +1,4 @@
-# Blogrid
+# [Blogrid](http://andergtk.github.io/blogrid/)
 
 Grid CSS responsivo para sites com sidebar.
 
@@ -17,7 +17,7 @@ bower install --save blogrid
 Ou faça o [download zip](https://github.com/andergtk/blogrid/archive/master.zip)
 do repositório e copie o arquivo `blogrid.css` dentro da pasta do seu projeto.
 
-## Uso
+## Configurar
 
 Você deve adicionar a seguinte tag na seção `<head>` para não ter problemas com
 a visualização em dispositivos móveis.
@@ -31,6 +31,8 @@ E também *linkar* o arquivo do sistema de grid:
 ```html
 <link rel="stylesheet" href="path/to/blogrid.css">
 ```
+
+## Uso
 
 Basicamente você precisa adicionar a classe `.grid` em cada *row* do seu site e
 a classe `.col` em cada coluna.
@@ -49,8 +51,6 @@ empihar as colunas em dispositivos menores.
 Para evitar que as colunas fiquem empilhadas e com a largura total da tela, você
 pode adicionar a classe `.no-stack` no `.grid` que manterá a largura padrão,
 independente to tamanho de tela.
-
-## [Demo aqui](http://andergtk.github.io/blogrid/)
 
 ## Contribuindo
 
