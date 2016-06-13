@@ -45,7 +45,7 @@ existem outras equivalentes (`.half` e `.one-third`, respectivamente).
 
 O sistema possui dois *breakpoints*, o primeiro é para telas com largura máxima
 de `1300px`, que reduz a largura da classe `.container` que vem por padrão de
-`1200px` para `1100px`, e o segundo *breakpoint* é com `960px`, que serve para
+`1200px` para `1060px`, e o segundo *breakpoint* é com `960px`, que serve para
 empihar as colunas em dispositivos menores.
 
 Para evitar que as colunas fiquem empilhadas e com a largura total da tela, você

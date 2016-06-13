@@ -10,16 +10,16 @@ body,
 html { height: 100%; }
 
 body {
-	min-height: 100%;
-	overflow-x: hidden;
+  min-height: 100%;
+  overflow-x: hidden;
 }
 
 /** Uma classe container para definir a largura e centralizar a pagina. */
 .container {
-	display: block;
-	margin: 0 auto;
-	padding: 0 20px;
-	max-width: 1200px;
+  display: block;
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1200px;
 }
 
 /** Evita que o padding interfira na largura. */
@@ -30,9 +30,9 @@ body {
  * O grid
  */
 .grid {
-	display: block;
-	margin: -20px -10px 0;
-	clear: both;
+  display: block;
+  margin: -20px -10px 0;
+  clear: both;
 }
 
 /**
@@ -43,8 +43,8 @@ body {
 
 .grid:before,
 .grid:after {
-	content: " ";
-	display: table;
+  content: " ";
+  display: table;
 }
 
 .grid:after { clear: both; }
@@ -53,17 +53,17 @@ body {
  * As colunas
  */
 .grid .col {
-	display: block;
-	float: left;
-	padding: 20px 10px 0;
+  display: block;
+  float: left;
+  padding: 20px 10px 0;
 }
 
 /**
  * O grid principal
  */
 .grid .content {
-	display: inline-block;
-	float: none;
+  display: inline-block;
+  float: none;
 }
 
 .grid .content { width: calc( 100% - 300px ); }
@@ -84,9 +84,7 @@ body {
 .grid .half { width: 50%; }
 .grid .one-third { width: 33.3332%; }
 .grid .two-thirds { width: 66.6665%; }
-.grid .one-quarter,
 .grid .one-fourth { width: 25%; }
-.grid .three-quarters,
 .grid .three-fourths { width: 75%; }
 .grid .one-fifth { width: 20%; }
 .grid .two-fifths { width: 40%; }
@@ -102,9 +100,7 @@ body {
 .grid .push-half { margin-left: 50%; }
 .grid .push-one-third { margin-left: 33.3332%; }
 .grid .push-two-thirds { margin-left: 66.6665%; }
-.grid .push-one-quarter,
 .grid .push-one-fourth { margin-left: 25%; }
-.grid .push-three-quarters,
 .grid .push-three-fourths { margin-left: 75%; }
 .grid .push-one-fifth { margin-left: 20%; }
 .grid .push-two-fifths { margin-left: 40%; }
@@ -117,27 +113,27 @@ body {
  * Remover espaços entre as colunas
  */
 .no-gutters.grid {
-	margin-right: 0;
-	margin-left: 0;
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .no-gutters.grid > .col {
-	padding-right: 0;
-	padding-left: 0;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 /**
  * Breakpoints
  */
 @media ( max-width: 1300px ) {
-	.container { max-width: 1100px; }
+  .container { max-width: 1060px; }
 }
 
 @media ( max-width: 960px ) {
-	/*& Empilha as colunas em que o .grid nao tem a classe .no-stack. */
-	.grid:not(.no-stack) > .col {
-		margin: 0; /* anula o efeito da classe .push-* */
-		width: 100%;
-		clear: both;
-	}
+  /** Empilha as colunas em que o .grid nao tem a classe .no-stack. */
+  .grid:not(.no-stack) > .col {
+    margin: 0; /* anula o efeito da classe .push-* */
+    width: 100%;
+    clear: both;
+  }
 }
