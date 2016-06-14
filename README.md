@@ -29,7 +29,7 @@ a visualização em dispositivos móveis.
 E também *linkar* o arquivo do sistema de grid:
 
 ```html
-<link rel="stylesheet" href="path/to/blogrid.css">
+<link rel="stylesheet" href="blogrid.css">
 ```
 
 ## Uso
