@@ -6,31 +6,34 @@ body {
 }
 
 h1 {
-  margin: 0.5em 0;
+  margin: .5em 0;
   font-size: 4em;
+  letter-spacing: -.05em;
 }
+
+h2,
+h3,
+h4 { font-weight: 300; }
 
 h2 {
   margin: 2em 0 1em;
   font-size: 2em;
-  font-weight: 500;
 }
 
-h3 {
-  margin: 0.667em 0;
+h3,
+h4 {
+  margin: 2em 0 .667em;
   font-size: 1.5em;
-  font-weight: 500;
 }
+
+h4 { margin: .667em 0; }
 
 a {
   padding-bottom: 1px;
-  border-bottom: 2px solid transparent;
+  border-bottom: 2px solid #fff;
   color: #fff;
   text-decoration: none;
-  transition: all 0.2s ease-in-out;
 }
-
-a:hover { border-bottom-color: #fff; }
 
 .text-center { text-align: center; }
 
