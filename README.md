@@ -1,4 +1,4 @@
-# [Blogrid](https://andersoncamargo.com.br/blogrid/)
+# [Blogrid](https://andergtk.github.io/blogrid)
 
 Grid CSS responsivo para sites com sidebar.
 
