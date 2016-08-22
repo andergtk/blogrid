@@ -66,7 +66,8 @@ body {
 /**
  * O grid principal
  */
-.grid .content {
+.grid .content,
+.grid .content-multisidebar {
 	display: inline-block;
 	float: none;
 }
