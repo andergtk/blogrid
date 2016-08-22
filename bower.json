@@ -1,6 +1,6 @@
 {
   "name": "blogrid",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "Grid CSS responsivo para sites com sidebar.",
   "homepage": "https://andersoncamargo.com.br/blogrid/",
   "main": "blogrid.css",
