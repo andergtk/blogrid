@@ -1,8 +1,8 @@
 {
   "name": "blogrid",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "Grid CSS responsivo para sites com sidebar.",
-  "homepage": "https://github.com/andergtk/blogrid",
+  "homepage": "https://andersoncamargo.com.br/blogrid/",
   "main": "blogrid.css",
   "authors": [
     {
