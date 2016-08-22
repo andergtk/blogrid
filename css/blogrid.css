@@ -1,16 +1,11 @@
 /*!
  * Blogrid
- *
  * Grid CSS responsivo para sites com sidebar.
- * https://github.com/andergtk/blogrid
+ * https://andersoncamargo.com.br/blogrid/
  */
 
-/** Evita a possível barra de rolagem horizontal. */
-body,
-html { height: 100%; }
-
+/** Evita a barra de rolagem horizontal. */
 body {
-	min-height: 100%;
 	overflow-x: hidden;
 }
 
@@ -24,7 +19,9 @@ body {
 
 /** Evita que o padding interfira na largura. */
 .grid,
-.grid .col { box-sizing: border-box; }
+.grid .col {
+	box-sizing: border-box;
+}
 
 /**
  * O grid
@@ -35,19 +32,27 @@ body {
 	clear: both;
 }
 
+.grid .grid {
+	margin: -20px -10px 0;
+}
+
 /**
  * Clearfix by: Nicolas Gallagher
  * http://nicolasgallagher.com/micro-clearfix-hack/
  */
-.grid { *zoom: 1; }
-
 .grid:before,
 .grid:after {
 	content: " ";
 	display: table;
 }
 
-.grid:after { clear: both; }
+.grid:after {
+	clear: both;
+}
+
+.grid {
+	*zoom: 1;
+}
 
 /**
  * As colunas
@@ -67,7 +72,7 @@ body {
 }
 
 .grid .content { width: calc( 100% - 300px ); }
-.grid .content.multisidebar { width: calc( 100% - 600px ); }
+.grid .content-multisidebar { width: calc( 100% - 600px ); }
 
 .grid .sidebar,
 .grid .sidebar-left { width: 300px; }
@@ -134,9 +139,8 @@ body {
 }
 
 @media ( max-width: 960px ) {
-	/*& Empilha as colunas em que o .grid nao tem a classe .no-stack. */
 	.grid:not(.no-stack) > .col {
-		margin: 0; /* anula o efeito da classe .push-* */
+		margin: 0;
 		width: 100%;
 		clear: both;
 	}
